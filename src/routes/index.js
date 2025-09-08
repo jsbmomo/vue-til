@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 export default new VueRouter({
+  mode: 'history', // URL에 #이 제거
   routes: [ // Vue router에 의해서 컨트롤(제어)되는 페이지 정보를 담는 배열
     {
       path: '/',
