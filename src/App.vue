@@ -1,7 +1,13 @@
 <template>
 	<div id="app">
-		<img alt="Vue logo" src="./assets/logo.png" />
-		<HelloWorld msg="Welcome to Your Vue.js App" />
+		<header>
+			<!--to에 지정된 문자열로 화면 이동-->
+			<router-link to="/login">로그인</router-link> 
+			|
+			<router-link to="/signup">회원가입</router-link>
+		</header>
+		
+		<router-view></router-view>
 	</div>
 </template>
 
